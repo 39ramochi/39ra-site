@@ -13,7 +13,13 @@ window.TrackCatalog = [
     "featuredOrder": 1,
     "artwork": "defrag",
     "coverImage": null,
-    "status": "published"
+    "status": "published",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/afterimage.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
   },
   {
     "id": "faultline-psalm",
@@ -28,7 +34,13 @@ window.TrackCatalog = [
     "featuredOrder": 2,
     "artwork": "malice",
     "coverImage": null,
-    "status": "published"
+    "status": "published",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/faultline-psalm.json",
+      "language": "en",
+      "credit": "39ra"
+    }
   },
   {
     "id": "tsuki-wa-henji-wo-shiranai",
@@ -43,7 +55,13 @@ window.TrackCatalog = [
     "featuredOrder": 3,
     "artwork": "alibi",
     "coverImage": null,
-    "status": "published"
+    "status": "published",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/tsuki-wa-henji-wo-shiranai.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
   },
   {
     "id": "phase-collision",
@@ -58,7 +76,13 @@ window.TrackCatalog = [
     "featuredOrder": null,
     "artwork": "alibi",
     "coverImage": null,
-    "status": "published"
+    "status": "published",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/phase-collision.json",
+      "language": "en",
+      "credit": "39ra"
+    }
   },
   {
     "id": "normal-error",
@@ -73,6 +97,37 @@ window.TrackCatalog = [
     "featuredOrder": null,
     "artwork": "normal",
     "coverImage": null,
-    "status": "published"
+    "status": "published",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/normal-error.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
+  },
+  {
+    "id": "chic-chaos",
+    "title": "CHIC//CHAOS",
+    "sunoUrl": "https://suno.com/s/Mr3P7ATc6n88uz7I",
+    "sunoId": "d2568d8e-c23c-48d4-b250-ed7bc3116731",
+    "genre": "Jazz Funk / City Pop / Dance Pop",
+    "bpm": 132,
+    "format": "Vocal",
+    "shortDescription": "洗練された装いの下で揺れる、不器用な恋心。跳ねる2ステップと艶やかなベース、ジャズファンクの洒脱なグルーヴが、計算どおりにいかない夜を軽やかに描く。",
+    "featured": false,
+    "featuredOrder": null,
+    "coverImage": "assets/covers/chic-chaos-b3d0b2c1.webp",
+    "status": "published",
+    "cosmicTrace": {
+      "enabled": true,
+      "strength": "soft"
+    },
+    "voice": "Female Mezzo-Soprano",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/chic-chaos.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
   }
 ];
