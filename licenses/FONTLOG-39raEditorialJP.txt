@@ -1,0 +1,32 @@
+39ra Editorial JP — FONTLOG
+
+Modified Version identity
+  Family: 39ra Editorial JP
+  Styles: Regular, Medium
+  PostScript names: ThirtyNineraEditorialJP-Regular,
+    ThirtyNineraEditorialJP-Medium
+
+Upstream source
+  Kaisei Decol v5.003, https://github.com/Font-Kai/Kaisei-Decol
+  Regular original SHA-256:
+    90E69CBAD9540F2BF87D939A596D28AFAC04316E43DBB4ED71EB4016FDB12E72
+  Medium original SHA-256:
+    4273F9C7ED29546274946086873271FA4907EC9F69E33A1518DD048224BE8219
+  Copyright 2020 The Kaisei Project Authors
+  License: SIL Open Font License 1.1; see OFL-39raEditorialJP.txt.
+
+Modification record
+  Date: 2026-11-07
+  Operation: glyph subsetting and name-table replacement only.
+  Tool: fontTools 4.63.0 / build_gate4b2b_fonts.py.
+  Unicode-source manifest SHA-256:
+    28B2803BDD6A7850B364EB28E294EB03DB3512DEF2B91CBC313750799BE99EDF
+  Output Regular SHA-256:
+    FA71CC2ED16492F2CB357F225CCA0A0EA7300C9B5104345C1326DDB111FA3E24
+  Output Medium SHA-256:
+    DCD8788DD52C669177301D833A31F4681C2FC1800F9660FE387B6824FCA0C9F4
+
+Validation retained all codepoints from the prior deployed subsets and all
+their outline signatures, advance widths, global metrics, and intended
+OpenType layout features. The modified family deliberately does not use the
+Kaisei Decol name.

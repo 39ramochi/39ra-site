@@ -1,0 +1,16 @@
+<svg style="color:#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="39ra Sonic Groove sigil">
+  <g fill="none" stroke="currentColor" stroke-linejoin="round">
+    <path stroke-width="11" d="M128 11c25 13 43 34 47 58 5 32-16 57-47 67-31-10-52-35-47-67 4-24 22-45 47-58z"/>
+    <path stroke-width="11" d="M128 11c25 13 43 34 47 58 5 32-16 57-47 67-31-10-52-35-47-67 4-24 22-45 47-58z" transform="rotate(72 128 128)"/>
+    <path stroke-width="11" d="M128 11c25 13 43 34 47 58 5 32-16 57-47 67-31-10-52-35-47-67 4-24 22-45 47-58z" transform="rotate(144 128 128)"/>
+    <path stroke-width="11" d="M128 11c25 13 43 34 47 58 5 32-16 57-47 67-31-10-52-35-47-67 4-24 22-45 47-58z" transform="rotate(216 128 128)"/>
+    <path stroke-width="11" d="M128 11c25 13 43 34 47 58 5 32-16 57-47 67-31-10-52-35-47-67 4-24 22-45 47-58z" transform="rotate(288 128 128)"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-linecap="round">
+    <path stroke-width="6" d="M61 94 A84 84 0 0 1 189 109"/>
+    <path stroke-width="6" d="M195 158 A84 84 0 0 1 67 146"/>
+    <path stroke-width="5" d="M82 83 A60 60 0 0 1 161 68"/>
+    <path stroke-width="5" d="M175 176 A60 60 0 0 1 96 189"/>
+    <circle cx="128" cy="128" r="11" stroke-width="5"/>
+  </g>
+</svg>

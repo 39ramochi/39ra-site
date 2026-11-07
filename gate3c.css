@@ -1,0 +1,21 @@
+/* Gate 3C — measured readability and motion-cost refinements only. */
+
+/* Retain a compositing hint only while a reveal is entering the viewport. */
+.reveal.show{will-change:auto}
+
+/* Functional text is intentionally distinct from the smaller editorial labels. */
+.music-focus-released{font-size:10px;color:#f4c4d8}
+.player-dock-suno-link{font-size:11px}
+.contact-form-head>p:last-child,.contact-social>p:not(:first-child){font-size:14px}
+.contact-privacy,.contact-form-status,.contact-field-error{font-size:14px}
+
+@media(max-width:700px){
+  .music-index-intro,.about-portrait-lede{font-size:14px}
+  .catalog-controls input,.catalog-controls select,.catalog-controls button{height:44px;font-size:14px;line-height:1.2}
+}
+
+/* The visual endpoint is already supplied by the reduced-motion stylesheet.
+   Avoid calculating HOME cut-up scroll transforms when it cannot be shown. */
+@media(prefers-reduced-motion:reduce){
+  .home-v2 .home-decor{will-change:auto}
+}

@@ -1,0 +1,37 @@
+Bodoni Moda Regular — source and copyright notice
+
+Embedded file:
+  assets/fonts/BodoniModa-Regular.ttf
+
+Upstream project:
+  https://github.com/indestructible-type/Bodoni
+
+Upstream file:
+  fonts/ttf/BodoniModa-Regular.ttf
+
+SHA-256:
+  DD9660CA406734A3B64F5B6C3A7A823C624F17479235761E82862E61ECDBAF57
+
+Internal family:
+  Bodoni Moda
+
+Internal full name:
+  Bodoni Moda Regular
+
+Internal PostScript name:
+  BodoniModa-Regular
+
+Internal version:
+  Version 2.005; ttfautohint (v1.8.4.7-5d5b)
+
+Copyright:
+  Copyright 2020 The Bodoni Moda Project Authors
+  (https://github.com/indestructible-type/Bodoni)
+
+License:
+  SIL Open Font License, Version 1.1.
+  The complete unmodified license text is distributed as
+  licenses/OFL-Bodoni-Moda.txt.
+
+Modification record:
+  This is the verified upstream TTF, copied without modification.

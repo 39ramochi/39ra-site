@@ -1,0 +1,53 @@
+39ra Reggae One Subset — FONTLOG
+
+Date:
+  2026-11-07
+
+Distributed derivative:
+  assets/fonts/39raReggaeOne-Subset.ttf
+
+Derivative SHA-256:
+  B7E4DCC02D6FA07D6CC5D95EAD3E0FF16A7E4E1559FCE5028692C8F23F0D70A0
+
+Source font:
+  ReggaeOne-Regular.ttf
+  Version 1.100
+  https://github.com/fontworks-fonts/Reggae
+
+Source SHA-256:
+  AEBE62598732D76036F30EC11BB0EC5F68938E373A06D1B4CEB6B9CF1ABF3DB2
+
+Source copyright:
+  Copyright 2020 The Reggae Project Authors
+  (https://github.com/fontworks-fonts/Reggae/), all rights reserved.
+
+License:
+  SIL Open Font License, Version 1.1.
+  The complete unmodified license text is distributed as
+  licenses/OFL-39raReggaeOne-Subset.txt.
+  No Reserved Font Name declaration was found in the supplied upstream
+  copyright/OFL header. The derivative nonetheless uses distinct names to
+  avoid being confused with the complete upstream font.
+
+Modifications:
+  1. A Windows PresentationCore GlyphTypeface.ComputeSubset operation retained
+     glyphs required by the manifest below and preserved the source outlines
+     and advance metrics for the verified strings.
+  2. Name-table records were changed only to distinguish the derivative:
+     family 39raReggae; full name 39raReggae Regular;
+     PostScript name R39raRg-OneRegulX; unique ID
+     1.100;39ra;39raReggaeSubset1.
+  3. The OpenType head checkSumAdjustment was recomputed after the name-table
+     modification.
+
+Subset manifest:
+  Source file: reggae-one-production.unicodes.txt
+  SHA-256: ABA0BDBAC7B4994C10AA4A9650B0E39D2A94726643A4B8861E6492B12E4CC797
+  Scope: actual HOME --font-home-jp literal Japanese copy, the preserved
+  Japanese Featured title fallback, ASCII letters/digits, and listed
+  punctuation.
+
+Build records:
+  The manifest and reproducible helper source are retained outside the public
+  site in the Gate 4B-2C.3 font-work record. No private lyrics or STUDIO data
+  were used.

@@ -1,0 +1,71 @@
+/* 39ra Ver.2.0 / MUSIC HERO — B (FLOATING GLASS + CUT-UP)
+   Production implementation: scoped to MUSIC intro only.
+   Keep HOME, ABOUT, MUSIC INDEX/FOCUS and Suno player untouched.
+*/
+.music-hero {
+  isolation: isolate;
+  background: radial-gradient(ellipse at 78% 43%, #392339 0%, #201920 48%, #100e18 100%);
+}
+.music-hero .inner-circle {
+  right: -1.5%;
+  top: 8%;
+  width: min(79vw, 1120px);
+  height: 81%;
+  aspect-ratio: auto;
+  border-radius: 0;
+  box-shadow: none;
+  background: url('assets/hero/music-floating-glass-B.webp') center / contain no-repeat;
+  filter: drop-shadow(0 16px 42px rgba(223, 127, 188, .15));
+  opacity: .95;
+  transform: translateZ(0);
+  pointer-events: none;
+}
+.music-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #13111bd9 0%, #13111b7e 29%, transparent 58%);
+}
+.music-hero .inner-inner { position: relative; z-index: 2; }
+@media (max-width: 700px) {
+  .music-hero {
+    background: radial-gradient(ellipse at 62% 52%, #382739, #121019 73%);
+  }
+  .music-hero .inner-circle {
+    right: -46%;
+    top: 29%;
+    width: 170vw;
+    height: 55%;
+    opacity: .92;
+    background-position: center;
+    background-size: contain;
+  }
+  /* Mobile only: protect the entire title and description from bright glass/ribbon highlights. */
+  .music-hero::before {
+    background:
+      radial-gradient(ellipse 74% 39% at 35% 51%, rgba(15, 11, 21, .57), transparent 100%),
+      linear-gradient(90deg, rgba(16, 12, 22, .87) 0%, rgba(16, 12, 22, .75) 43%, rgba(16, 12, 22, .47) 74%, rgba(16, 12, 22, .10) 100%),
+      linear-gradient(180deg, rgba(18, 14, 24, .46) 0%, rgba(18, 14, 24, .1) 68%, transparent 100%);
+  }
+  .music-hero .inner-inner h1 {
+    text-shadow: 0 3px 20px rgba(8, 6, 15, .54);
+  }
+  .music-hero .inner-inner p:not(.kicker) {
+    color: rgba(255, 247, 253, .91);
+    text-shadow: 0 2px 9px rgba(8, 6, 14, .85);
+  }
+}
+
+@media (max-width: 380px) {
+  /* Avoid orphaning the last Japanese characters on narrow phones. */
+  .music-hero .inner-inner p:not(.kicker) {
+    font-size: 12px;
+    letter-spacing: -.01em;
+    line-height: 1.9;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .music-hero .inner-circle { animation: none; }
+}

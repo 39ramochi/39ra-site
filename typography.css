@@ -1,0 +1,89 @@
+/*
+  39ra Ver.2.0 Typography Integration v1
+  This file is intentionally isolated from style.css so the provisional system
+  can be replaced after the final brand-font decision.
+*/
+@font-face{font-family:'39ra Editorial JP';src:url('assets/fonts/39ra-editorial-jp-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Editorial JP';src:url('assets/fonts/39ra-editorial-jp-medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Reggae One Subset';src:url('assets/fonts/39raReggaeOne-Subset.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Denki Chip';src:url('assets/fonts/x8y12pxDenkiChip.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Accent Display';src:url('assets/fonts/39ra-accent-display-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Glitch Display';src:url('assets/fonts/39ra-glitch-display-heavy.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:'39ra Bodoni Moda';src:url('assets/fonts/BodoniModa-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --font-body-jp:'39ra Editorial JP','Yu Mincho','Hiragino Mincho ProN',serif;
+  --font-heading-jp:'39ra Editorial JP','Yu Mincho','Hiragino Mincho ProN',serif;
+  --font-home-jp:'39ra Reggae One Subset','Yu Mincho','Hiragino Mincho ProN',serif;
+  --font-meta:'39ra Denki Chip','IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+  --font-ui:'39ra Editorial JP','Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+  --font-fragment:'39ra Glitch Display','Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+  --font-accent-jp:'39ra Accent Display','Yu Mincho','Hiragino Mincho ProN',serif;
+}
+
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+body{font-family:var(--font-ui)}
+.kicker,.topbar small,.nav-item,.topbar-replay,.mobile-nav,.v2-site-id,.v2-meta,.v2-scroll-cue,.v2-exhibit-pin header,.v2-exhibit-info>p,.v2-open-track,.v2-exhibit-progress,.v2-index-lines,.about-scene-label,.about-portrait-copy>p:first-child,.about-paper-portrait figcaption,.about-dossier-copy>p:first-child,.about-dossier-persona b,.about-dossier-note,.about-method-note,.music-preview-label,.music-preview-copy p,.catalog-controls label,.catalog-controls button,.catalog-results,.music-index-row>span,.music-index-row>i,.music-index-row>b,.music-index-row>em,.music-focus-back,.music-focus-copy>p:first-child,.music-focus-actions p,.music-focus-actions button,.music-focus-actions a,.intro-caption,.intro-upper,.intro-bottom,.intro-body p,.intro-body small,.enter-site{font-family:var(--font-meta)}
+
+/* Fixed Y1-derived images: the source fonts are not included in this site. */
+.brand-wordmark{display:block;width:clamp(70px,6vw,102px);height:auto;filter:drop-shadow(0 0 9px #e69ab933)}
+.brand{gap:10px}.brand small{align-self:center}.v2-title{display:flex;align-items:center}.v2-title img{display:block;width:clamp(220px,30vw,500px);height:auto;max-width:100%;filter:drop-shadow(0 0 28px #d889ad26)}
+.v2-presence-display{position:absolute;z-index:2;left:clamp(24px,7vw,120px);bottom:clamp(98px,13vh,170px);width:min(40vw,550px);height:auto;opacity:.2;mix-blend-mode:screen;pointer-events:none;transform:rotate(-5deg)}
+.music-index-tools h1{margin:18px 0 24px;line-height:0}.music-index-wordmark{display:block;width:min(100%,470px);height:auto}
+.intro-body h1{margin:10px 0;line-height:0}.boot-wordmark{display:block;width:min(68vw,700px);height:auto;filter:drop-shadow(0 0 32px #e69ab947)}
+
+/* HOME: theater headings retain their broad English image voice; Japanese copy uses Haretsu. */
+.v2-fracture-note,.hero-description,.slice-copy{font-family:var(--font-home-jp)}
+.v2-exhibit-handoff b,.v2-fragments i{font-family:var(--font-fragment)}
+.v2-fracture-copy h2{font-family:var(--font-fragment);font-weight:400}
+
+/* Featured Exhibition trial: only these three title/description blocks change. */
+.v2-exhibit-info h3{font-weight:400;margin-bottom:clamp(17px,2vw,25px)}
+.v2-exhibit-info h3 .exhibit-title-line{display:block}
+.v2-exhibit-info>p:last-child{font-family:var(--font-body-jp);font-weight:400;font-size:clamp(14px,1.08vw,17px);line-height:2.02;letter-spacing:.015em}
+.home-v2[data-featured-type-treatment="current"] .v2-exhibit-info h3{font-family:var(--font-home-jp);letter-spacing:-.045em;line-height:.92}
+.home-v2[data-featured-type-treatment="kaisei-a"] .v2-exhibit-info h3{font-family:var(--font-heading-jp);letter-spacing:-.035em;line-height:1.01}
+.home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="afterimage"] .v2-exhibit-info h3,.home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="faultline-psalm"] .v2-exhibit-info h3{font-family:'39ra Bodoni Moda','Bodoni Moda',Georgia,serif;letter-spacing:-.035em;line-height:.88}
+.home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="tsuki-wa-henji-wo-shiranai"] .v2-exhibit-info h3{font-family:var(--font-heading-jp);font-weight:500;letter-spacing:-.04em;line-height:1.08}
+.home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="afterimage"] .v2-exhibit-info h3{font-size:clamp(42px,4.3vw,76px)}
+.home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="faultline-psalm"] .v2-exhibit-info h3{font-size:clamp(39px,4.1vw,72px)}
+
+/* MUSIC: catalog values remain real text for a future 200-track catalog. */
+.music-index-intro,.music-focus-genre,.music-focus-description{font-family:var(--font-body-jp)}
+.music-index-row>strong,.music-preview-copy h2,.music-focus-copy h2{font-family:var(--font-heading-jp);font-weight:500;letter-spacing:-.035em}
+.music-index-row>strong{line-height:1.02;overflow-wrap:anywhere}.music-focus-copy h2{line-height:.9;overflow-wrap:anywhere}
+.catalog-controls input,.catalog-controls select{font-family:var(--font-ui)}
+
+/* ABOUT: body and section heads prioritize Japanese legibility; Ryukaitan stays fragment-only. */
+.about-portrait-copy h1,.about-dossier-copy h2,.about-method-copy h2,.about-connection-scene h2{font-family:var(--font-heading-jp);font-weight:500;letter-spacing:-.055em}
+.about-portrait-lede,.about-dossier-copy>p,.about-method-copy>p:last-child,.about-connection-scene>p:not(.about-scene-label){font-family:var(--font-body-jp);font-size:clamp(14px,1.05vw,16px);line-height:2}
+.about-dossier-copy h2 em{font-family:var(--font-accent-jp);font-style:normal;font-weight:400;letter-spacing:.01em}
+/* METHOD: three explicit semantic lines use Kaisei Decol Medium; Ryukaitan remains available only for other decorative text. */
+.about-method-copy h2{font-family:var(--font-heading-jp);font-size:clamp(62px,9vw,150px);font-weight:500;letter-spacing:-.04em;line-height:.92;max-width:12em}
+.about-method-copy h2>span{display:block;white-space:nowrap}
+.about-method-copy h2 em{font-family:var(--font-heading-jp);font-style:normal;font-weight:500;letter-spacing:-.025em;color:#dc92b5}
+@media(max-width:700px){.about-method-copy h2{font-size:clamp(42px,13vw,56px);line-height:1.02;letter-spacing:-.045em;max-width:none}.about-method-copy h2 em{letter-spacing:-.035em}}
+
+@media (max-width:900px){
+  .v2-presence-display{width:min(52vw,420px);bottom:16vh}
+  .music-index-wordmark{width:min(100%,410px)}
+  .about-dossier-copy>p,.about-method-copy>p:last-child{font-size:15px;line-height:1.9}
+}
+@media (max-width:700px){
+  .brand-wordmark{width:74px}.brand small{font-size:8px}
+  .v2-title img{width:min(70vw,310px)}.v2-presence-display{left:20px;bottom:14%;width:58vw;opacity:.14}
+  .music-index-tools h1{margin:12px 0 22px}.music-index-wordmark{width:min(100%,360px)}
+  .boot-wordmark{width:min(78vw,360px)}
+  .music-index-row>strong{font-size:clamp(18px,6vw,25px);line-height:1.05}
+  .v2-exhibit-info>p:last-child{font-size:15px;line-height:1.95;letter-spacing:.01em}
+  .home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="afterimage"] .v2-exhibit-info h3{font-size:clamp(43px,11vw,56px);line-height:.92}
+  .home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="faultline-psalm"] .v2-exhibit-info h3{font-size:clamp(42px,10.8vw,54px);line-height:.94}
+  .home-v2[data-featured-type-treatment="serif-b"] .v2-exhibit-card[data-track="tsuki-wa-henji-wo-shiranai"] .v2-exhibit-info h3{font-size:clamp(38px,10.8vw,54px);line-height:1.13}
+  .music-focus-copy h2{font-size:clamp(43px,13vw,68px);line-height:.96}
+  .about-portrait-copy h1,.about-dossier-copy h2,.about-method-copy h2,.about-connection-scene h2{letter-spacing:-.04em}
+  .about-portrait-lede,.about-dossier-copy>p,.about-method-copy>p:last-child,.about-connection-scene>p:not(.about-scene-label){font-size:14px;line-height:1.9}
+}
+@media (prefers-reduced-motion:reduce){
+  .v2-fracture-copy h2,.v2-exhibit-handoff b{font-family:var(--font-ui)}
+  .v2-presence-display{transform:none;opacity:.12}
+}

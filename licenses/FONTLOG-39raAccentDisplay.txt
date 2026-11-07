@@ -1,0 +1,26 @@
+39ra Accent Display — FONTLOG
+
+Modified Version identity
+  Family: 39ra Accent Display
+  Style: Regular
+  PostScript name: ThirtyNineraAccentDisplay-Regular
+
+Upstream source
+  Ryukaitan - Fake Reso 2 v1.00,
+  https://rwi.booth.pm/items/7245665
+  Original SHA-256:
+    81121DA26D31B548DF2109014713226B53119E90310CFBD089E0E665D092A958
+  Copyright 2025 Rwi/@rwiiug
+  License: SIL Open Font License 1.1; see OFL-39raAccentDisplay.txt.
+
+Modification record
+  Date: 2026-11-07
+  Operation: glyph subsetting and name-table replacement only.
+  Tool: fontTools 4.63.0 / build_gate4b2b_fonts.py.
+  Unicode-source manifest SHA-256:
+    28B2803BDD6A7850B364EB28E294EB03DB3512DEF2B91CBC313750799BE99EDF
+  Output SHA-256:
+    D21CAE5636170652A24AA3C3E52B7CFD2FC01456DFA33043C25D5E5C6D8D3822
+
+Validation retained all codepoints from the prior deployed subset and all
+their outline signatures, advance widths, and global metrics.

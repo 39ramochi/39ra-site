@@ -1,0 +1,11 @@
+39ra Accent Display — Unicode manifest
+
+Build scope: current public HTML, JavaScript, CSS, JSON, SVG, plus all
+codepoints retained from the previous deployed Ryukaitan subset.
+Source manifest SHA-256: 28B2803BDD6A7850B364EB28E294EB03DB3512DEF2B91CBC313750799BE99EDF
+Public-source codepoint count: 558
+Retained output codepoint count: 585
+
+The complete machine-readable source list is retained in the private build
+record, not in the Pages artifact. Rebuild details are in
+FONTLOG-39raAccentDisplay.txt.

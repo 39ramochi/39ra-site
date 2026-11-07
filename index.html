@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<base href="https://39ramochi.github.io/39ra-site/">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c0d13">
+<meta name="description" content="39raの公式サイト。ジャンルや音色を横断しながら生まれた音楽と、その世界を映し出すビジュアルを公開しています。楽曲の試聴や作品一覧、プロフィールをご覧いただけます。">
+<title>39ra | SOUND / IDENTITY</title>
+<!-- 39ra-ogp:start -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="39ra">
+<meta property="og:title" content="39ra — ARCHIVE OF UNEXPECTED SOUND">
+<meta property="og:description" content="異なる音が出会い、思いがけない響きが生まれる。39raが制作する音楽と、その世界を映し出すビジュアル。ここから、気になる一曲を見つけてください。">
+<meta property="og:url" content="https://39ramochi.github.io/39ra-site/">
+<meta property="og:image" content="https://39ramochi.github.io/39ra-site/assets/ogp/39ra-home-ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="39raの音楽と創作世界を表すアートワーク">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="39ra — ARCHIVE OF UNEXPECTED SOUND">
+<meta name="twitter:description" content="異なる音が出会い、思いがけない響きが生まれる。39raが制作する音楽と、その世界を映し出すビジュアル。ここから、気になる一曲を見つけてください。">
+<meta name="twitter:image" content="https://39ramochi.github.io/39ra-site/assets/ogp/39ra-home-ogp.png">
+<link rel="canonical" href="https://39ramochi.github.io/39ra-site/">
+<!-- 39ra-ogp:end -->
+<link rel="icon" type="image/svg+xml" href="assets/brand/sonic-groove/39ra-sonic-groove-sigil-16--dark.svg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="typography.css">
+<link rel="stylesheet" href="ui-tokens.css">
+<link rel="stylesheet" href="ui-components.css">
+<link rel="stylesheet" href="cosmic-focus.css">
+<link rel="stylesheet" href="focus-background.css">
+<link rel="stylesheet" href="focus-lyrics.css">
+<link rel="stylesheet" href="music-hero-B.css">
+<link rel="stylesheet" href="gate3c.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<canvas class="sakura-field" id="sakuraField" aria-hidden="true"></canvas>
+<div class="scroll-progress" aria-hidden="true"><div id="scroll-progress"></div></div>
+<div class="mouse-halo" aria-hidden="true"></div>
+<header class="topbar" id="topbar">
+  <a href="./" class="brand route" data-route="home" aria-label="39ra HOME"><strong class="sr-only">39ra</strong><img class="brand-logo" id="brandLogo" src="assets/brand/sonic-groove/39ra-sonic-groove-primary-horizontal--dark.svg" data-dark-src="assets/brand/sonic-groove/39ra-sonic-groove-primary-horizontal--dark.svg" data-light-src="assets/brand/sonic-groove/39ra-sonic-groove-primary-horizontal--light.svg" alt="" aria-hidden="true"></a>
+  <nav aria-label="Main navigation">
+    <a class="route nav-item" data-route="home" href="./"><span>01</span> HOME</a>
+    <a class="route nav-item" data-route="music" href="music/"><span>02</span> MUSIC</a>
+    <a class="route nav-item" data-route="about" href="about/"><span>03</span> ABOUT</a>
+  </nav>
+  <button type="button" class="topbar-replay" id="replayIntro">↺ <span>REPLAY INTRO</span></button>
+  <button type="button" class="mobile-menu" id="mobileMenu" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">MENU</button>
+</header>
+<div id="mobileNavScrim" class="mobile-nav-scrim" hidden></div>
+<nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true" inert><div class="mobile-nav-portal" aria-hidden="true"><img src="assets/brand/sonic-groove/39ra-sonic-groove-sigil--sakura.svg" alt=""></div><div class="mobile-nav-head"><span>INDEX / DESTINATION</span><button type="button" id="mobileNavClose" aria-label="メニューを閉じる">CLOSE ×</button></div><a href="./" class="route" data-route="home"><small>01 / PRESENCE</small><b>HOME</b></a><a href="music/" class="route" data-route="music"><small>02 / ARCHIVE</small><b>MUSIC</b></a><a href="about/" class="route" data-route="about"><small>03 / DOSSIER</small><b>ABOUT</b></a><a href="about/#contact" class="contact-route" data-contact><small>04 / CONTACT</small><b>CONTACT</b></a><p>ESC TO CLOSE · TAB TO CYCLE</p></nav>
+<main id="pages" tabindex="-1">
+<section class="page page-active" id="page-home" data-page="home">
+  <div class="home-v2" id="homeV2" data-featured-type-treatment="serif-b" data-home-decor="on">
+    <section class="v2-presence" id="v2Presence" aria-label="THE PRESENCE">
+      <div class="v2-theater-grid" aria-hidden="true"></div><img class="home-decor home-decor-presence" src="assets/home-decor/03-glass-editorial.webp" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="v2-sigil-field" aria-hidden="true"><svg viewBox="0 0 240 240"><circle cx="120" cy="120" r="104"/><circle cx="120" cy="120" r="73"/><path d="M120 14v212M14 120h212M46 46l148 148M194 46L46 194"/></svg></div>
+      <p class="v2-site-id">39ra — SOUND / IDENTITY <span>01 / PRESENCE</span></p><p class="v2-meta">ARCHIVE OF UNEXPECTED SOUND<br>39ra / JAPAN</p><img class="v2-presence-display" src="assets/type/presence-celestial.png" alt="" aria-hidden="true">
+      <div class="v2-title" aria-label="39ra"><span class="sr-only">39ra</span><img src="assets/brand/wordmark-39ra-celestial.png" alt="" aria-hidden="true"></div><figure class="v2-portrait"><img data-visual-asset="homeMaster" src="assets/characters/39ra-master-transparent.webp" alt="39raの全身ビジュアル。黒い衣装に桜色の差し色を纏う人物" loading="eager"><figcaption>IDENTITY / 001<br>BLACK · SAKURA · IRIS</figcaption></figure>
+      <div class="v2-foreground" aria-hidden="true"><i></i><i></i><i></i><b>THE<br>UNFOLDING<br>SELF</b></div><a class="v2-scroll-cue" href="#v2Fracture">SCROLL TO UNFOLD <span>↓</span></a>
+    </section>
+    <section class="v2-fracture" id="v2Fracture" aria-label="THE FRACTURE"><div class="v2-fracture-pin"><img class="home-decor home-decor-fracture" src="assets/home-decor/01-ribbon-fracture.webp" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="v2-fracture-copy"><p>02 / THE FRACTURE</p><h2>DISASSEMBLE.<br><em>RECOMPOSE.</em></h2></div><div class="v2-fragments" aria-hidden="true"><i>39</i><i>ra</i><span class="v2-fragment-collage"><span class="v2-fragment-collage-piece v2-fragment-collage-piece-a"></span><span class="v2-fragment-collage-piece v2-fragment-collage-piece-b"></span><span class="v2-fragment-collage-piece v2-fragment-collage-piece-c"></span></span><i></i><i></i><i></i></div><div class="v2-aperture"><span>THE EXHIBITION<br>TAKES<br>SHAPE.</span></div><p class="v2-fracture-note">音をほどき、断片を重ねる。<br>異なる輪郭が交わるとき、まだない景色が生まれる。</p></div></section>
+    <section class="v2-exhibition" id="v2Exhibition" aria-label="FEATURED EXHIBITION"><div class="v2-exhibit-pin"><header><span>03 / FEATURED EXHIBITION</span><span id="v2SceneCounter">01 — 03</span></header><img class="home-decor home-decor-exhibition" src="assets/home-decor/02-orbit-signal.webp" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="v2-exhibit-stage" id="v2ExhibitTrack" aria-live="polite"></div><div class="v2-exhibit-handoff" aria-hidden="true"><b>39ra</b><span>NEXT WORK / RECOMPOSING</span></div><div class="v2-exhibit-progress"><i id="v2ExhibitBar"></i><span>SCROLL TO REVEAL</span></div></div></section>
+    <section class="v2-archive" id="v2Archive"><img class="home-decor home-decor-archive" src="assets/home-decor/04-cosmic-trace.webp" alt="" aria-hidden="true" loading="lazy" decoding="async"><p>04 / ARCHIVE THRESHOLD</p><h2>EVERY<br><em>FREQUENCY</em><br>HAS A TRACE.</h2><div class="v2-index-lines" id="v2IndexLines"></div><a class="route v2-index-link" data-route="music" href="music/">ENTER MUSIC INDEX <span>↗</span></a></section>
+  </div>
+  <section class="home-hero" id="homeHero">
+    <div class="hero-grid" aria-hidden="true"></div><div class="hero-orb" aria-hidden="true"></div><div class="hero-ring ring-one" aria-hidden="true"></div><div class="hero-ring ring-two" aria-hidden="true"></div>
+    <svg class="hero-sigil" viewBox="0 0 240 240" aria-hidden="true"><defs><path id="sigilPetal" d="M120 120C83 109 73 76 94 47c20 14 35 36 26 73Z"/></defs><g fill="none" stroke="currentColor"><circle cx="120" cy="120" r="104"/><circle cx="120" cy="120" r="72" stroke-dasharray="3 8"/><g><use href="#sigilPetal"/><use href="#sigilPetal" transform="rotate(72 120 120)"/><use href="#sigilPetal" transform="rotate(144 120 120)"/><use href="#sigilPetal" transform="rotate(216 120 120)"/><use href="#sigilPetal" transform="rotate(288 120 120)"/></g><path d="M120 15v28M120 197v28M15 120h28M197 120h28"/></g></svg>
+    <div class="hero-copy">
+      <p class="kicker reveal">PERSONAL SOUND ARCHIVE <b>✦</b> 2026</p>
+      <div class="hero-title" aria-label="39ra"><span class="title-clip"><span class="title-up">39</span></span><span class="title-clip"><span class="title-up delayed">ra<span class="hero-star">✧</span></span></span></div>
+      <p class="hero-subtitle reveal">Sound <em>/</em> Identity</p>
+      <p class="hero-description reveal">枠に収まらない音を、ひとつの場所へ。<br>音楽と、その向こう側にあるもの。</p>
+      <a href="music/" data-route="music" class="route circle-link reveal" aria-label="MUSICへ移動"><span>EXPLORE MUSIC</span><b>↗</b></a>
+    </div>
+    <div class="portrait-stage" id="portraitStage">
+      <div class="stage-meta">PROFILE / 39RA <span>IDENTITY 001</span></div>
+      <div class="portrait-frame"><img data-visual-asset="homeMaster" src="assets/characters/39ra-master-transparent.webp" alt="39raの全身ビジュアル。黒髪に桜色の差し色、青い瞳、黒い装飾ジャケット" loading="eager"></div>
+      <div class="stage-vertical">ELEGANCE IN SILENCE / PRECISION IN THOUGHT</div>
+      <div class="stage-stamp" aria-hidden="true">✧</div>
+    </div>
+    <div class="hero-bottom"><span>SCROLL / TO DECODE</span><span>39RA — AUDIO &amp; IDENTITY</span><span>↓</span></div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">SOUND WITHOUT BORDERS <i>✦</i> MAKE THE UNEXPECTED <i>✦</i> 39RA SOUND / IDENTITY <i>✦</i> SOUND WITHOUT BORDERS <i>✦</i> MAKE THE UNEXPECTED <i>✦</i> 39RA SOUND / IDENTITY <i>✦</i></div></div>
+  <section class="horizontal-zone" id="horizontalZone" aria-label="Featured work design demonstrations">
+    <div class="horizontal-pin">
+      <div class="horizontal-intro"><span>01 / THE SOUND</span><span id="sceneCounter">SCENE 01 — 03</span></div>
+      <h2 class="horiz-heading">NOT ONE <em>GENRE.</em></h2>
+      <div class="horizontal-track" id="horizontalTrack" aria-live="polite"></div>
+      <div class="horizontal-footer"><span>SCROLL TO MOVE THE GALLERY</span><div class="horiz-bar"><div id="horizBar"></div></div><span>↘</span></div>
+    </div>
+  </section>
+  <section class="identity-slice" id="identitySlice">
+    <div class="slice-orb" aria-hidden="true"></div>
+    <div class="slice-inner"><p class="kicker reveal">02 / THE IDENTITY</p><h2 class="slice-type reveal">BEYOND<br><i>THE</i> <span>FRAME.</span></h2><p class="slice-copy reveal">音楽だけでは語りきれない、その輪郭へ。<br>静と動、精密と偶然。39raの創作する世界。</p><a class="route text-cta reveal" data-route="about" href="about/">GET TO KNOW 39RA <b>↗</b></a></div>
+  </section>
+  <section class="home-end"><span class="reveal">YOUR NEXT FREQUENCY</span><a href="music/" class="route reveal" data-route="music">LISTEN<span>→</span></a><span class="reveal">[ START EXPLORING ]</span></section>
+</section>
+<section class="page" id="page-music" data-page="music" hidden>
+  <section class="inner-hero music-hero"><div class="inner-inner"><p class="kicker reveal">02 / SONIC ARCHIVE</p><h1>DISCO<span>GRAPHY.</span></h1><p class="reveal">Different genres. One identity.<br>楽曲を選ぶとSuno公式プレイヤーが開きます。</p></div><div class="inner-circle"></div></section>
+  <section class="music-v2" aria-label="MUSIC INDEX AND FOCUS">
+    <div class="music-index" id="musicIndex">
+      <div class="music-index-tools"><p class="kicker">02 / MUSIC INDEX</p><h1><span class="sr-only">THE RECORD ARCHIVE.</span><img class="music-index-wordmark" src="assets/type/music-record-archive-gaen.png" alt="" aria-hidden="true"></h1><p class="music-index-intro">ひとつの音にも、いくつもの表情がある。その輪郭をたどる、作品の索引。</p><form class="catalog-controls" id="catalogControls"><label>SEARCH <input id="musicSearch" type="search" autocomplete="off" placeholder="TITLE, GENRE OR KEYWORD"></label><label>GENRE <select id="genreFilter"><option value="">ALL GENRES</option></select></label><label>TRACK TYPE <select id="formatFilter"><option value="">ALL TYPES</option></select></label><label>BPM <select id="bpmFilter"><option value="">ALL BPM</option><option value="slow">UNDER 120</option><option value="mid">120–159</option><option value="fast">160+</option></select></label><label>WORKS <select id="featuredFilter"><option value="">ALL WORKS</option><option value="featured">FEATURED WORKS</option></select></label><label>SORT <select id="sortSelect"><option value="new">NEWEST FIRST</option><option value="title">TITLE A–Z</option><option value="bpm">BPM HIGH–LOW</option></select></label><button type="reset" id="clearFilters">RESET FILTERS</button></form><p class="catalog-results" id="catalogResults" aria-live="polite"></p><div class="music-index-list" id="musicGrid" aria-live="polite"></div><button class="load-more" id="loadMore" type="button" hidden>SHOW MORE WORKS <span>↓</span></button></div>
+      <aside class="music-preview" id="musicPreview" aria-live="polite"><p class="music-preview-label">SELECTED WORK</p><figure class="music-preview-cover"><img id="musicPreviewImage" alt="選択中の楽曲ジャケット"></figure><div class="music-preview-copy"><p id="musicPreviewNo">01 / 05</p><h2 id="musicPreviewTitle">AFTERIMAGE</h2><p id="musicPreviewFacts"></p><button type="button" id="musicPreviewOpen">ENTER FOCUS ↗</button></div></aside>
+    </div>
+    <section class="music-focus" id="musicFocus" hidden aria-hidden="true" data-cosmic-extension="off" data-cosmic-strength="soft" data-cosmic-surface="dark" aria-label="Selected track focus"><div class="music-focus-background" aria-hidden="true"></div><div class="music-focus-scrim" aria-hidden="true"></div><button type="button" class="music-focus-back" id="musicFocusBack">← RETURN TO INDEX</button><div class="music-focus-grid"><div class="music-focus-copy"><p id="musicFocusNumber">01 / 05 · FOCUS</p><h2 id="musicFocusTitle">AFTERIMAGE</h2><p class="music-focus-genre" id="musicFocusGenre"></p><p class="music-focus-released" id="musicFocusReleased" hidden></p><p class="music-focus-description" id="musicFocusDescription"></p></div><div class="music-focus-extension"><div class="music-focus-cosmic" aria-hidden="true"></div><figure class="music-focus-cover"><img id="musicFocusImage" alt="選択中の楽曲ジャケット"></figure></div><div class="music-focus-actions"><p id="musicFocusFacts"></p><button type="button" id="musicFocusPlayer">OPEN SUNO PLAYER ↗</button><a id="musicFocusExternal" target="_blank" rel="noopener noreferrer">VIEW ON SUNO ↗</a><button type="button" id="musicFocusLyricsToggle" hidden aria-expanded="false" aria-controls="musicFocusLyrics">VIEW LYRICS ↗</button></div><section class="music-focus-lyrics" id="musicFocusLyrics" hidden aria-hidden="true" aria-labelledby="musicFocusLyricsHeading"><header><p id="musicFocusLyricsHeading">LYRICS / WORDS</p><button type="button" id="musicFocusLyricsClose">CLOSE LYRICS ×</button></header><p class="music-focus-lyrics-status" id="musicFocusLyricsStatus" role="status"></p><p class="music-focus-lyrics-credit" id="musicFocusLyricsCredit"></p><div class="music-focus-lyrics-body" id="musicFocusLyricsBody"></div><button type="button" class="music-focus-lyrics-retry" id="musicFocusLyricsRetry" hidden>RETRY LYRICS ↗</button></section></div></section>
+  </section>
+</section>
+<section class="page" id="page-about" data-page="about" hidden>
+  <div class="about-v2" id="aboutV2">
+    <section class="about-scene about-portrait-scene" id="aboutPortrait" aria-labelledby="aboutPortraitTitle"><div class="about-stage-grid" aria-hidden="true"></div><p class="about-scene-label">03 / ABOUT · THE PORTRAIT</p><div class="about-portrait-copy"><p>PERSONA / CREATOR</p><h1 id="aboutPortraitTitle">39ra</h1><p class="about-portrait-lede">音楽を作る主体と、<br>音の世界を案内する視覚的な姿。</p></div><figure class="about-paper-portrait"><img data-visual-asset="aboutPortrait" src="assets/characters/39ra-cinematic-portrait.webp" alt="39raの映画的なビジュアル・ポートレート"><figcaption>VISUAL PERSONA / REFERENCE 001</figcaption></figure><div class="about-portrait-rules" aria-hidden="true"><i></i><i></i><i></i></div></section>
+    <section class="about-scene about-dossier-scene" id="aboutDossier" aria-labelledby="aboutDossierTitle"><div class="about-dossier-pin"><p class="about-scene-label">04 / THE DOSSIER</p><div class="about-dossier-paper"><figure class="about-dossier-image"><img data-visual-asset="dossierPrimary" src="assets/characters/39ra-expression-gentle.webp" alt="39raの穏やかな表情を示す人物資料"><figcaption>IMAGE REFERENCE / NOT A BIOGRAPHICAL FACT</figcaption></figure><span class="about-detail about-detail-expression" data-visual-bg="dossierExpression" aria-hidden="true"></span><span class="about-detail about-detail-costume" data-visual-bg="dossierCostume" aria-hidden="true"></span><span class="about-detail about-detail-drape" data-visual-bg="dossierDrape" aria-hidden="true"></span><i class="about-annotation-line" aria-hidden="true"></i></div><article class="about-dossier-copy"><p>ARTIST / CREATOR</p><h2 id="aboutDossierTitle">異なる音が交わる、<br>そのあいだに惹かれる。</h2><p>39raという名義で、さまざまな音楽を制作しています。激しい音も、静かな音も、ジャンルを越えた組み合わせも。そのとき作りたいと思ったものに向き合いながら、ひとつずつ作品を残しています。</p><p class="about-dossier-persona"><b>VISUAL PERSONA</b> サクラは、39raの創作世界を表現するビジュアル・ペルソナです。黒と桜色を基調とした装いに、青い瞳。楽曲や作品の世界観を、もうひとつの姿として映し出しています。</p></article></div></section>
+    <section class="about-scene about-method-scene" id="aboutMethod" aria-labelledby="aboutMethodTitle"><div class="about-method-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="about-method-copy"><p class="about-scene-label">05 / THE METHOD</p><h2 id="aboutMethodTitle"><span>狙った音と、</span><span><em>偶然生まれた音。</em></span><span>そのあいだを行き来する。</span></h2><p>異なるジャンルや音色を組み合わせ、試しては変え、また組み直す。思い描いていた音に近づくこともあれば、予想もしなかった方向へ進むこともあります。その過程で見つけた面白さを、ひとつずつ作品にしています。</p></div><p class="about-method-note">ORDER / ACCIDENT<br>SILENCE / IMPACT</p></section>
+    <section class="about-scene about-connection-scene" id="aboutConnection" aria-labelledby="aboutConnectionTitle"><div class="about-connection-sigil" aria-hidden="true"><img src="assets/brand/sonic-groove/39ra-sonic-groove-sigil--light.svg" alt=""></div><p class="about-scene-label">06 / CONNECTION</p><h2 id="aboutConnectionTitle">FOLLOW WHAT<br><em>RESONATES.</em></h2><p>作品のどこかに、気になる響きがあれば。MUSIC INDEXから、その先をたどってみてください。</p><a class="route about-music-link" data-route="music" href="music/">ENTER MUSIC INDEX <span>↗</span></a></section>
+    <section class="about-contact" id="aboutContact" aria-labelledby="aboutContactTitle"><div class="about-contact-sigil" aria-hidden="true"><img src="assets/brand/sonic-groove/39ra-sonic-groove-sigil--sakura.svg" alt=""></div><header class="about-contact-head"><p>07 / CONTACT · SIGNAL DESK</p><h2 id="aboutContactTitle" tabindex="-1">SEND A <em>SIGNAL.</em></h2><p>音楽をきっかけに生まれた感想も、これからの創作につながる相談も。ここから、それぞれの声を届けてください。</p></header><div class="contact-options" id="contactOptions" aria-live="polite"></div><div class="contact-form-layout"><form class="contact-form" id="contactForm" method="post" aria-describedby="contactPrivacy contactFormStatus" aria-busy="false"><div class="contact-form-head"><p>FORM / OFFICIAL INQUIRIES</p><h3>WRITE A <em>MESSAGE.</em></h3><p>制作相談・楽曲利用・その他の正式なお問い合わせは、こちらからお送りください。</p></div><div class="contact-form-fields"><label>NAME <span>お名前／活動名（任意）</span><input id="contactName" name="name" type="text" autocomplete="name" maxlength="120" data-fs-field></label><span class="contact-field-error" data-fs-error="name"></span><label>EMAIL <span>返信先メールアドレス</span><input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="254" required data-fs-field></label><span class="contact-field-error" data-fs-error="email"></span><label>INQUIRY TYPE <span>お問い合わせ種別</span><select id="contactType" name="inquiry_type" required data-fs-field><option value="">選択してください</option></select></label><span class="contact-field-error" data-fs-error="inquiry_type"></span><input id="contactSubject" name="subject" type="hidden"><label>MESSAGE <span>お問い合わせ内容</span><textarea id="contactMessage" name="message" rows="9" minlength="10" maxlength="5000" required data-fs-field></textarea></label><span class="contact-field-error" data-fs-error="message"></span><div class="contact-honeypot" aria-hidden="true"><label>Leave this field empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div></div><p class="contact-privacy" id="contactPrivacy">入力いただいたお名前、メールアドレス、本文は、お問い合わせへの返信と必要な連絡のために使用します。送信内容はFormspreeを経由して、運営者が指定したGmailへ送信されます。詳しくは<a href="privacy/">プライバシーポリシー</a>をご確認ください。</p><div class="contact-form-actions"><button class="contact-submit" id="contactSubmit" type="submit" disabled aria-disabled="true" data-fs-submit-btn>SEND INQUIRY <span>↗</span></button><p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite">フォームを準備しています。</p></div><div class="contact-form-error" data-fs-error role="alert" aria-live="assertive"></div><div class="contact-form-success" data-fs-success role="status" aria-live="polite"></div></form><aside class="contact-social" aria-labelledby="contactSocialTitle"><p>X / SOCIAL</p><h3 id="contactSocialTitle">FOLLOW THE<br><em>FREQUENCY.</em></h3><p>活動情報の確認や気軽な交流は、Xをご利用ください。正式な制作相談・お問い合わせはフォームから承ります。</p><a class="contact-social-link" id="contactSocialLink" target="_blank" rel="noopener noreferrer" hidden>FOLLOW ON X <span>↗</span></a><span class="contact-social-unavailable" id="contactSocialUnavailable" aria-disabled="true">Xリンクは準備中です。</span></aside></div></section>
+  </div>
+</section>
+</main>
+<footer class="footer"><span>© 39ra</span><a class="footer-contact" href="about/#contact" data-contact>CONTACT</a><a class="footer-privacy" href="privacy/">PRIVACY</a><span>SOUND / IDENTITY, IN MOTION.</span><button id="backTop">BACK TO TOP</button></footer>
+<aside class="player-dock" id="playerDock" aria-label="Suno公式プレイヤー" aria-hidden="true">
+  <div class="player-dock-head"><span><b id="dockStatus">SELECT A TRACK</b> <small id="dockTrack"></small></span><button type="button" id="dockClose" aria-label="プレイヤーを閉じる">×</button></div>
+  <a class="player-dock-suno-link" id="dockSunoLink" target="_blank" rel="noopener noreferrer" hidden>VIEW ON SUNO ↗</a>
+  <div class="player-dock-empty" id="playerDockEmpty"><p>気になる一曲を、MUSIC INDEXから。</p><a class="route" data-route="music" href="music/">GO TO MUSIC INDEX</a></div>
+  <div class="persistent-suno-slot" id="persistentSunoSlot"></div>
+  <p class="player-error" id="playerError" hidden>プレイヤーを表示できませんでした。Sunoのページから楽曲を開くことができます。</p>
+</aside>
+<button class="player-pill" id="playerPill" type="button" aria-controls="playerDock" aria-expanded="false"><span class="player-led"></span><span id="playerPillAction">EXPAND PLAYER</span><small id="playerPillLabel">SELECT A TRACK</small></button>
+<div class="transition" id="transition" aria-hidden="true"><canvas class="transition-field" id="transitionField"></canvas><div class="transition-bars" id="transitionBars"></div><svg class="transition-wave" viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true"><path id="transitionWavePath" d="M0 120H1000"/></svg><div class="transition-center"><span id="transitionRouteLabel">HOME → MUSIC</span><strong id="transitionLabel">RECOMPOSING.</strong><small>CHANGING FREQUENCY</small></div></div>
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="39ra サイト起動演出"><div class="intro-scan" aria-hidden="true"></div><div class="intro-upper"><span>39RA SYSTEM / BOOT SEQUENCE</span><button id="skipIntro">SKIP INTRO</button></div><div class="intro-body"><span class="intro-caption">ESTABLISHING SIGNAL</span><div class="boot-brand-reconstruction" aria-hidden="true"><i class="boot-orbit boot-orbit-one"></i><i class="boot-orbit boot-orbit-two"></i><i class="boot-orbit boot-orbit-three"></i><img class="boot-final-logo" src="assets/brand/sonic-groove/39ra-sonic-groove-primary-vertical--dark.svg" alt=""></div><h1 class="sr-only">39ra</h1><div class="boot-wave" id="bootWave" aria-hidden="true"></div><p>LET THE SOUND UNFOLD.</p><button id="enterSite" class="enter-site">STEP INSIDE <b>↗</b></button><small>Visual intro only · music plays through Suno</small></div><div class="intro-bottom"><span>BETWEEN SOUND AND IDENTITY</span><span>001 / 001</span></div></div>
+<div class="track-panel" id="trackPanel" role="dialog" aria-modal="true" aria-labelledby="panelTitle" aria-hidden="true" inert><div class="panel-scrim" id="panelScrim"></div><div class="panel-inner" tabindex="-1"><div class="panel-top"><span>39RA / TRACK INFORMATION</span><button id="closePanel" aria-label="楽曲詳細を閉じる">CLOSE ×</button></div><div class="panel-cover" id="panelCover"><span id="panelArtworkText">NORMAL//ERROR</span></div><p class="kicker" id="panelType">TRACK / SUNO</p><h2 id="panelTitle">NORMAL//ERROR</h2><p class="track-facts" id="panelFacts"></p><p class="panel-description" id="panelDesc"></p><button type="button" class="open-player" id="openPersistentPlayer">EXPAND PLAYER</button><a class="suno-external-link" id="sunoExternalLink" target="_blank" rel="noopener noreferrer">VIEW ON SUNO</a><div class="panel-notice" id="panelNotice"></div></div></div>
+<script src="data/tracks.js"></script><script src="data/visual-assets.js"></script><script src="data/contact-config.js"></script><script src="data/formspree-config.js"></script><script src="track-presentation-utils.js"></script><script src="lyrics-focus.js"></script><script src="app.js"></script>
+</body></html>

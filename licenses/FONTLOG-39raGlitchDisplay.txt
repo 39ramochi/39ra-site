@@ -1,0 +1,28 @@
+39ra Glitch Display — FONTLOG
+
+Modified Version identity
+  Family: 39ra Glitch Display
+  Style: Heavy
+  PostScript name: ThirtyNineraGlitchDisplay-Heavy
+
+Upstream source
+  Torono Glitch Sans H3 v1.00, RAPTORTYPE | あまずさ鴒,
+  https://booth.pm/zh-tw/items/3041172
+  Original SHA-256:
+    CAC5687AEBF5E61F2268C27B58CCF9B3A65F0C18BCA886CE0990E26FDA308E63
+  Base notice: Adobe Source Han Sans JP v2.001, including the Reserved Font
+  Name 'Source'; see NOTICE-ToronoGlitchSans.txt.
+  License: SIL Open Font License 1.1; see OFL-39raGlitchDisplay.txt.
+
+Modification record
+  Date: 2026-11-07
+  Operation: glyph subsetting and name-table replacement only.
+  Tool: fontTools 4.63.0 / build_gate4b2b_fonts.py.
+  Unicode-source manifest SHA-256:
+    28B2803BDD6A7850B364EB28E294EB03DB3512DEF2B91CBC313750799BE99EDF
+  Output SHA-256:
+    6C25B7261158A73F9AC5313A741B64AF502FDF7DB16F3C70F817EA63950C2069
+
+Validation retained all codepoints from the prior deployed subset and all
+their outline signatures, advance widths, and global metrics. The modified
+family deliberately does not use the reserved Source name.

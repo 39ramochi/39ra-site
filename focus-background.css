@@ -1,0 +1,62 @@
+/* 39ra MUSIC FOCUS — formally adopted B / right-weighted crystal background.
+   Separate from the per-track Cosmic Trace that frames the untouched jacket.
+   Opacity, crop, and light-shield are taken from the accepted comparison v1. */
+.music-focus {
+  --music-focus-bg-opacity: .70;
+}
+.music-focus::before {
+  /* Preserve the original radial/signal layer at reduced visual weight. */
+  opacity: .25;
+}
+.music-focus > .music-focus-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent url("assets/focus-backgrounds/focus-crystal-right.webp") center / cover no-repeat;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(1.025);
+  transform-origin: 72% 40%;
+  transition: opacity 1.1s ease, transform 1.45s cubic-bezier(.16, 1, .3, 1);
+  will-change: auto;
+}
+.music-focus.is-open > .music-focus-background {
+  opacity: var(--music-focus-bg-opacity);
+  transform: none;
+}
+.music-focus > .music-focus-scrim {
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 10, 19, .74) 0%,
+    rgba(13, 10, 19, .28) 28%,
+    rgba(13, 10, 19, .22) 64%,
+    rgba(13, 10, 19, .70) 100%
+  );
+}
+/* Do not change music-focus-grid (z-index:2), the back button (z-index:5),
+   Cosmic Trace, or the persistent Suno dock. */
+@media (max-width: 700px) {
+  .music-focus > .music-focus-background {
+    inset: 0 0 auto;
+    height: clamp(340px, 68svh, 580px);
+    background-size: auto 100%;
+    background-position: 92% top;
+    transform-origin: 85% top;
+  }
+  .music-focus > .music-focus-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(15, 12, 20, .20) 0%,
+      rgba(15, 12, 20, .40) 30%,
+      #111017 85%
+    );
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .music-focus > .music-focus-background {
+    transition: none !important;
+    transform: none !important;
+  }
+}

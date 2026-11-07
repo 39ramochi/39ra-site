@@ -1,0 +1,19 @@
+Torono Glitch Sans H3 — upstream notice chain
+
+Derivative used by this site:
+  assets/fonts/39ra-glitch-display-heavy.ttf
+
+Original author/distribution:
+  RAPTORTYPE | あまずさ鴒
+  https://booth.pm/zh-tw/items/3041172
+  Original file: 瀞ノグリッチゴシックH3.ttf
+  Version: 1.00
+  SHA-256: CAC5687AEBF5E61F2268C27B58CCF9B3A65F0C18BCA886CE0990E26FDA308E63
+
+The author package identifies Source Han Sans JP v2.001 (Adobe/Google) as
+the base font. Its retained copyright/OFL notice includes:
+  Copyright 2014-2019 Adobe, with Reserved Font Name 'Source'.
+
+The derived font uses a distinct 39ra name and does not use the reserved
+Source name. The full OFL text is in OFL-39raGlitchDisplay.txt and the
+subsetting/name-change record is in FONTLOG-39raGlitchDisplay.txt.

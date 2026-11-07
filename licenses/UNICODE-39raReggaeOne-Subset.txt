@@ -1,0 +1,20 @@
+39ra Reggae One Subset — Unicode manifest
+
+This manifest records the character scope retained for the derivative. It is
+limited to public HOME copy and a protected Japanese Featured-title fallback;
+it contains no STUDIO or lyric data.
+
+U+0021 U+0028 U+0029 U+002C U+002D U+002E U+0030 U+0031 U+0032 U+0033
+U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+003A U+003B U+003F
+U+0041..U+005A U+005B U+005D U+0061..U+007A U+007B U+007D U+2013 U+2014
+U+3001 U+3002 U+3042 U+3044 U+3046 U+304C U+304D U+3051 U+3053 U+3059
+U+305D U+3060 U+3064 U+3067 U+3068 U+3069 U+306A U+306B U+306D U+306E
+U+306F U+3072 U+3078 U+307B U+307E U+3082 U+3089 U+308A U+308B U+308C
+U+308F U+3092 U+4E16 U+4E8B U+4EA4 U+4F5C U+5074 U+5076 U+5275 U+52D5
+U+53CE U+5411 U+5834 U+5BC6 U+6240 U+65AD U+666F U+6708 U+67A0 U+697D
+U+7136 U+7247 U+751F U+754C U+7570 U+77E5 U+7CBE U+8272 U+8A9E U+8F2A
+U+8FD4 U+90ED U+91CD U+9759 U+97F3
+
+Authoritative build input and its SHA-256 are stated in
+FONTLOG-39raReggaeOne-Subset.txt. The full build manifest is retained outside
+the public site so it can be regenerated from the literal approved HOME copy.

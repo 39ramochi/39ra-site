@@ -1,0 +1,23 @@
+/* MUSIC FOCUS public lyrics reader. The panel is absent from layout until a published lyric is requested. */
+.music-focus-lyrics[hidden]{display:none}
+.music-focus-lyrics{grid-column:1/-1;position:relative;z-index:4;max-width:min(860px,100%);margin:clamp(4px,3vh,30px) 0 0;padding:clamp(22px,3.4vw,48px);border:1px solid color-mix(in srgb,var(--pink) 48%,transparent);background:linear-gradient(128deg,rgba(24,15,28,.9),rgba(68,38,62,.78));box-shadow:18px 22px 0 rgba(0,0,0,.18);color:#fff}
+.music-focus-lyrics::before{content:'';position:absolute;inset:10px;pointer-events:none;border:1px solid rgba(255,255,255,.13)}
+.music-focus-lyrics>header{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:15px;border-bottom:1px solid rgba(255,255,255,.26)}
+.music-focus-lyrics>header p{margin:0;color:var(--pink);font:600 12px/1 var(--font-meta);letter-spacing:.14em}
+.music-focus-lyrics button{position:relative;z-index:1;min-height:40px;border:1px solid rgba(255,255,255,.44);background:transparent;color:#fff;padding:8px 12px;font:600 10px/1 var(--font-meta);letter-spacing:.08em;cursor:pointer}
+.music-focus-lyrics button:hover{background:rgba(231,170,200,.16)}
+.music-focus-lyrics button:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+.music-focus-lyrics-status,.music-focus-lyrics-credit{position:relative;z-index:1;margin:18px 0 0}
+.music-focus-lyrics-status{min-height:1.45em;color:#f3d9e5;font:400 13px/1.55 var(--font-body-jp)}
+.music-focus-lyrics-credit{color:var(--pink);font:600 10px/1.35 var(--font-meta);letter-spacing:.1em}
+.music-focus-lyrics-credit:empty{display:none}
+.music-focus-lyrics-body{position:relative;z-index:1;margin-top:21px;white-space:pre-wrap;overflow-wrap:anywhere;color:#fff;font:400 clamp(15px,1.3vw,18px)/2.05 var(--font-body-jp);text-wrap:pretty}
+/* Section cues retain their literal [Verse]/[Chorus] text and reading order. */
+.music-focus-lyrics-section{color:#e8b8d2;font-family:var(--font-meta);font-size:.79em;font-weight:600;letter-spacing:.06em;line-height:inherit}
+.music-focus-lyrics-body:empty{display:none}
+.music-focus-lyrics-retry{margin-top:18px}
+.music-focus-actions #musicFocusLyricsToggle[hidden]{display:none}
+
+@media(max-width:900px){.music-focus-lyrics{margin-top:2px;max-width:none}.music-focus-lyrics>header{align-items:flex-start}}
+@media(max-width:700px){.music-focus-lyrics{order:4;width:100%;min-width:0;align-self:stretch;margin-top:4px;padding:22px 18px 28px;box-shadow:10px 13px 0 rgba(0,0,0,.18)}.music-focus-lyrics>header{gap:12px}.music-focus-lyrics>header p{padding-top:7px}.music-focus-lyrics-body{font-size:15px;line-height:2}.music-focus-lyrics button{min-height:44px}.music-focus-actions #musicFocusLyricsToggle{width:100%}}
+@media(prefers-reduced-motion:reduce){.music-focus-lyrics{scroll-behavior:auto}}
