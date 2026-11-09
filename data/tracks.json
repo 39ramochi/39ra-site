@@ -128,5 +128,30 @@
       "language": "ja",
       "credit": "39ra"
     }
+  },
+  {
+    "id": "rakuyo-rakusui-koiniotsu",
+    "title": "落葉、落水、恋に落つ",
+    "sunoUrl": "https://suno.com/s/v0olUWjFxF2OxcC1",
+    "sunoId": "cbcc42c4-415f-44d4-9947-a7620c7a58a7",
+    "genre": "Japanese Liquid DnB / Wistful Indie Pop",
+    "bpm": 164,
+    "format": "Vocal (Female)",
+    "shortDescription": "舞い落ちる紅葉、流れ落ちる滝、恋に落ちる心。流麗なブレイクビーツと澄んだ歌声が描く、秋色のラブソング。",
+    "featured": false,
+    "featuredOrder": null,
+    "artwork": "",
+    "coverImage": "assets/covers/rakuyo-rakusui-koiniotsu-4cee9012.jpg",
+    "status": "published",
+    "cosmicTrace": {
+      "enabled": true,
+      "strength": "soft"
+    },
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/rakuyo-rakusui-koiniotsu.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
   }
 ]
