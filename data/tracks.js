@@ -154,5 +154,30 @@ window.TrackCatalog = [
       "language": "ja",
       "credit": "39ra"
     }
+  },
+  {
+    "id": "cathedral-in-freefall",
+    "title": "CATHEDRAL IN FREEFALL",
+    "sunoUrl": "https://suno.com/s/lNm5SzL89eBrnDWZ",
+    "sunoId": "98252b05-143f-40b5-9c0c-86aea6d49123",
+    "genre": "Dark Gothic Rock / Space Metal / Dark Synthpop / Eurotrance",
+    "bpm": 160,
+    "format": "Vocal (Female)",
+    "shortDescription": "崩壊する宇宙の聖堂で、記録された声と別れの瞬間が交錯する。鐘の響き、重厚なギター、ダークシンセとトランスの推進力が、喪失と脱出のドラマを描く一曲。",
+    "featured": false,
+    "featuredOrder": null,
+    "artwork": "defrag",
+    "coverImage": "assets/covers/cathedral-in-freefall-07c20d37.jpg",
+    "status": "published",
+    "cosmicTrace": {
+      "enabled": true,
+      "strength": "soft"
+    },
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/cathedral-in-freefall.json",
+      "language": "en",
+      "credit": "39ra"
+    }
   }
 ];
