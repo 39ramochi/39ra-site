@@ -179,5 +179,55 @@ window.TrackCatalog = [
       "language": "en",
       "credit": "39ra"
     }
+  },
+  {
+    "id": "mukifu-no-shushisen",
+    "title": "未記譜の終止線",
+    "sunoUrl": "https://suno.com/s/1lXC3rx0OR7tnK9u",
+    "sunoId": "da856017-576f-4d1d-b65a-e43e075dd506",
+    "genre": "Japanese Visual Kei / Progressive Nu Metal / Psychedelic Trance",
+    "bpm": 176,
+    "format": "Vocal (Male)",
+    "shortDescription": "低く刻むギターと変拍子、バロック・ヴァイオリンが交差する中で、あらかじめ決められた結末に抗う声が揺れる。未完の一小節を自分の手に取り戻すための、熱を帯びた一曲。",
+    "featured": false,
+    "featuredOrder": null,
+    "coverImage": "assets/covers/mukifu-no-shushisen-0aa399db.jpg",
+    "status": "published",
+    "cosmicTrace": {
+      "enabled": true,
+      "strength": "soft"
+    },
+    "voice": "Male Japanese visual-kei baritone-tenor",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/mukifu-no-shushisen.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
+  },
+  {
+    "id": "wakatteru-ja-tarinai",
+    "title": "わかってる、じゃ足りない",
+    "sunoUrl": "https://suno.com/s/CXMnPxQvwTQZP3bo",
+    "sunoId": "0f38ffd0-d8d0-49e0-9bac-9be04efeabf3",
+    "genre": "Japanese Gothic Alternative Rock / Industrial Trip-Hop / Atmospheric Post-Rock",
+    "bpm": 102,
+    "format": "Vocal (Male)",
+    "shortDescription": "自分を責める声と、誰かに助けを求めたい気持ちの間で揺れる夜を描く。痛みを美化せず、ためらいながらも言葉を手放さないための静かな一曲。",
+    "featured": false,
+    "featuredOrder": null,
+    "coverImage": "assets/covers/wakatteru-ja-tarinai-e9f88d77.jpg",
+    "status": "published",
+    "cosmicTrace": {
+      "enabled": true,
+      "strength": "soft"
+    },
+    "voice": "Male visual-kei baritone-tenor",
+    "lyrics": {
+      "available": true,
+      "path": "data/lyrics/wakatteru-ja-tarinai.json",
+      "language": "ja",
+      "credit": "39ra"
+    }
   }
 ];
